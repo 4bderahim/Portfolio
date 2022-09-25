@@ -1,0 +1,256 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+background: linear-gradient(160deg, rgba(2,0,36,1) 0%, rgba(68,11,115,1) 36%, rgba(0,212,255,1) 100%);
+  
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+#navbar{
+  
+  z-index:999;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 60px;
+  background: #1b0126;
+}
+nav li{
+  margin-right: 90px;
+  width: 110px;
+  list-style: none;
+  background-color: #ffad00 ;
+  border-radius: 10%; 
+  text-align: center;
+}
+nav ul{
+  display: flex;
+  height: 52%;
+  margin-top:18px;
+}
+.nav-links a{
+  float: center;
+  font-size: 24px;
+  font-weight: bold;
+  
+  font-family: Tahoma;
+  color: black;
+  text-decoration: none;
+  
+}
+.nav-links li:hover{
+  background-color: gold;
+  transition: all 0.5s;
+  
+}
+@media only screen and (max-width: 600px){
+  #navbar{
+    justify-content: flex-end;
+  }
+  .nav-links a{
+  font-size: 20px;
+  
+}
+  nav li{
+  margin-right: 30px;
+/*   margin-top: 20px; */
+}
+  
+}
+
+
+
+
+/* WELCOME SECTION */
+
+#welcome-section{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center
+  width: 100%;
+  height: 100vh;
+}
+
+h2, 
+h1{
+  text-align: center;
+}
+h1{
+  font-weight: 200;
+  font-size: 40px;
+  font-family: 'Courier New' , monospace;
+  color: white;
+}
+h2{
+  margin-top:16px;
+  font-size: 25px;
+  font-weight: 200;
+  color: #bdfeee;
+}
+@media only screen and (max-width:440px){
+  h1{
+    font-size: 28px;
+  }
+  #welcome-section h2{
+    font-size: 17px;
+  }
+}
+a{
+  text-decoration: none;
+}
+.project-section #project-title{
+  
+  font-size: 28px;
+  color: #eee;
+}
+
+.project-section  h1{
+  font-size: 30px;
+  padding-top: 20px;
+/*   color: white; */
+}
+@media only screen and (max-width:500px){
+  .project-section h1{
+  font-size: 20px;
+}
+  .project-section #project-title{
+    font-size: 20px;
+  }
+  h2{
+    font-size: 24px;
+  }
+}
+.project-tile{
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-top: 60px;
+  border: solid 1px gray;
+  border-radius: 2%;
+}
+.project-tile:hover{
+  
+  box-shadow: 1px 2px 9px 1px white;
+  width: 302px;
+  height: 302px;
+  transition: all 0.2s;
+}
+@media only screen and (max-width: 440px){
+  .project-tile{
+    width:282px; 
+  }
+  
+  .project-tile:hover{
+  
+  width: 285px;
+  height: 302px;
+  transition: all 0.3s;
+}
+}
+
+.project-section{
+/*   background-color: black; */
+  background-image: url('transparent.png');
+  
+background: radial-gradient(circle, rgba(56,2,59,1) 19%, rgba(0,0,0,1) 87%);
+
+}
+
+img{
+  width: 100%;
+  height: 75%;
+  border-radius: 6%;  
+}
+img:hover{
+  opacity: 0.7;
+  background-color: black;
+/*   filter: blur( 1px); */
+}
+
+#project-title{
+  text-align: center;
+  margin-top: 16px;
+}@media only screen and (max-width: 440px){
+  #project-title{
+    font-size: 22px;
+  }
+}
+
+
+
+
+
+.projects-grid-container{
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  width: 100%;
+  max-width: 1200px ;
+  margin: 0 auto;
+  padding-bottom: 52px;
+}
+@media only screen and (max-width:440px){
+  .projects-grid-container{
+    grid-template-columns: 1fr;
+  }
+}
+/* ll */
+.contact-section{ 
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  padding-bottom: 50px;
+  background: #330101;
+}
+.contact-section ul{
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section li{
+  margin-top: 60px;
+  font-size: 32px;
+  list-style: none;
+}
+#contact h2{
+  color: white;
+  font-size: 40px;
+  font-family: monospace;
+  border-top: 3px solid white;
+  border-bottom:0px solid #82848f;
+  
+}
+li i{
+  color: orange;
+  margin-right: 90px;
+}
+@media only screen and (max-width:440px){
+  .contact-section ul{
+    flex-direction: column; 
+    place-items: center;
+    margin-left: 20%;
+    
+  }
+  .contact-section li{
+    justify-content: center;
+    margin-top: 25px;
+    font-size: 22px;
+  }
+  #contact h2{
+    font-size: 22px;
+  }
+}
+li i:hover{
+  color: #FF8C00;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #4f2d03;
+  border-radius: 5%;
+  transition: all 0.3s;
+}
